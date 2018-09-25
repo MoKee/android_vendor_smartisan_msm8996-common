@@ -143,6 +143,7 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/surabaya/proprietary/etc/firmware/wlan/qca_cld/WCNSS_cfg.dat:system/etc/firmware/wlan/qca_cld/WCNSS_cfg.dat \
     vendor/smartisan/surabaya/proprietary/etc/sensors/hals.conf:system/etc/sensors/hals.conf \
     vendor/smartisan/surabaya/proprietary/etc/sensors/sensor_def_qcomdev.conf:system/etc/sensors/sensor_def_qcomdev.conf \
+    vendor/smartisan/surabaya/proprietary/lib/hw/audio.primary.msm8996.so:system/lib/hw/audio.primary.msm8996.so \
     vendor/smartisan/surabaya/proprietary/lib/hw/camera.msm8996.so:system/lib/hw/camera.msm8996.so \
     vendor/smartisan/surabaya/proprietary/lib/libarcsoft_agegender_detection.so:system/lib/libarcsoft_agegender_detection.so \
     vendor/smartisan/surabaya/proprietary/lib/libarcsoft_beautyshot.so:system/lib/libarcsoft_beautyshot.so \
@@ -156,6 +157,7 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/surabaya/proprietary/lib/libmpbase.so:system/lib/libmpbase.so \
     vendor/smartisan/surabaya/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
     vendor/smartisan/surabaya/proprietary/lib/libteeclientjni.so:system/lib/libteeclientjni.so \
+    vendor/smartisan/surabaya/proprietary/lib64/hw/audio.primary.msm8996.so:system/lib64/hw/audio.primary.msm8996.so \
     vendor/smartisan/surabaya/proprietary/lib64/hw/fingerprint.fpc.so:system/lib64/hw/fingerprint.fpc.so \
     vendor/smartisan/surabaya/proprietary/lib64/hw/fingerprint.goodix.so:system/lib64/hw/fingerprint.goodix.so \
     vendor/smartisan/surabaya/proprietary/lib64/lib_fpc_tac_shared.so:system/lib64/lib_fpc_tac_shared.so \
