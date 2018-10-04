@@ -1103,7 +1103,6 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/surabaya/proprietary/bin/pm-proxy:system/bin/pm-proxy \
     vendor/smartisan/surabaya/proprietary/bin/pm-service:system/bin/pm-service \
     vendor/smartisan/surabaya/proprietary/bin/port-bridge:system/bin/port-bridge \
-    vendor/smartisan/surabaya/proprietary/bin/qmuxd:system/bin/qmuxd \
     vendor/smartisan/surabaya/proprietary/bin/qseecomd:system/bin/qseecomd \
     vendor/smartisan/surabaya/proprietary/bin/radish:system/bin/radish \
     vendor/smartisan/surabaya/proprietary/bin/rmt_storage:system/bin/rmt_storage \
@@ -1117,7 +1116,6 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/surabaya/proprietary/etc/cne/andsfCne.xml:system/etc/cne/andsfCne.xml \
     vendor/smartisan/surabaya/proprietary/etc/data/dsi_config.xml:system/etc/data/dsi_config.xml \
     vendor/smartisan/surabaya/proprietary/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml \
-    vendor/smartisan/surabaya/proprietary/etc/data/qmi_config.xml:system/etc/data/qmi_config.xml \
     vendor/smartisan/surabaya/proprietary/etc/dpm/dpm.conf:system/etc/dpm/dpm.conf \
     vendor/smartisan/surabaya/proprietary/etc/dpm/nsrm/NsrmConfiguration.xml:system/etc/dpm/nsrm/NsrmConfiguration.xml \
     vendor/smartisan/surabaya/proprietary/etc/drc/drc_cfg_AZ.txt:system/etc/drc/drc_cfg_AZ.txt \
@@ -1131,12 +1129,11 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/surabaya/proprietary/etc/permissions/dpmapi.xml:system/etc/permissions/dpmapi.xml \
     vendor/smartisan/surabaya/proprietary/etc/permissions/embms.xml:system/etc/permissions/embms.xml \
     vendor/smartisan/surabaya/proprietary/etc/permissions/imscm.xml:system/etc/permissions/imscm.xml \
-    vendor/smartisan/surabaya/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
+    vendor/smartisan/surabaya/proprietary/etc/permissions/izat.xt.srv.xml:system/etc/permissions/izat.xt.srv.xml \
     vendor/smartisan/surabaya/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
     vendor/smartisan/surabaya/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/smartisan/surabaya/proprietary/etc/permissions/telephonyservice.xml:system/etc/permissions/telephonyservice.xml \
     vendor/smartisan/surabaya/proprietary/etc/surround_sound_3mic/surround_sound_rec_AZ.cfg:system/etc/surround_sound_3mic/surround_sound_rec_AZ.cfg \
-    vendor/smartisan/surabaya/proprietary/etc/thermal-engine.conf:system/etc/thermal-engine.conf \
     vendor/smartisan/surabaya/proprietary/framework/ConnectivityExt.jar:system/framework/ConnectivityExt.jar \
     vendor/smartisan/surabaya/proprietary/framework/QtiTelephonyServicelibrary.jar:system/framework/QtiTelephonyServicelibrary.jar \
     vendor/smartisan/surabaya/proprietary/framework/cneapiclient.jar:system/framework/cneapiclient.jar \
@@ -1148,15 +1145,16 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/surabaya/proprietary/framework/dpmapi.jar:system/framework/dpmapi.jar \
     vendor/smartisan/surabaya/proprietary/framework/embmslibrary.jar:system/framework/embmslibrary.jar \
     vendor/smartisan/surabaya/proprietary/framework/imscmlibrary.jar:system/framework/imscmlibrary.jar \
+    vendor/smartisan/surabaya/proprietary/framework/izat.xt.srv.jar:system/framework/izat.xt.srv.jar \
     vendor/smartisan/surabaya/proprietary/framework/rcsimssettings.jar:system/framework/rcsimssettings.jar \
     vendor/smartisan/surabaya/proprietary/framework/tcmclient.jar:system/framework/tcmclient.jar \
     vendor/smartisan/surabaya/proprietary/lib/libOmxVpp.so:system/lib/libOmxVpp.so \
+    vendor/smartisan/surabaya/proprietary/lib/libextmedia_jni.so:system/lib/libextmedia_jni.so \
     vendor/smartisan/surabaya/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
     vendor/smartisan/surabaya/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
     vendor/smartisan/surabaya/proprietary/lib/libstagefright_soft_flacdec.so:system/lib/libstagefright_soft_flacdec.so \
     vendor/smartisan/surabaya/proprietary/lib/libvpplibrary.so:system/lib/libvpplibrary.so \
-    vendor/smartisan/surabaya/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
-    vendor/smartisan/surabaya/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
+    vendor/smartisan/surabaya/proprietary/lib64/libextmedia_jni.so:system/lib64/libextmedia_jni.so \
     vendor/smartisan/surabaya/proprietary/lib64/libloc_api_v02.so:system/lib64/libloc_api_v02.so \
     vendor/smartisan/surabaya/proprietary/lib64/libloc_ds_api.so:system/lib64/libloc_ds_api.so \
     vendor/smartisan/surabaya/proprietary/lib64/libstagefright_soft_flacdec.so:system/lib64/libstagefright_soft_flacdec.so \
@@ -1168,6 +1166,13 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/surabaya/proprietary/vendor/bin/qti:system/vendor/bin/qti \
     vendor/smartisan/surabaya/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
     vendor/smartisan/surabaya/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
+    vendor/smartisan/surabaya/proprietary/vendor/etc/perf-profile0.conf:system/vendor/etc/perf-profile0.conf \
+    vendor/smartisan/surabaya/proprietary/vendor/etc/perf-profile1.conf:system/vendor/etc/perf-profile1.conf \
+    vendor/smartisan/surabaya/proprietary/vendor/etc/perf-profile2.conf:system/vendor/etc/perf-profile2.conf \
+    vendor/smartisan/surabaya/proprietary/vendor/etc/perf-profile3.conf:system/vendor/etc/perf-profile3.conf \
+    vendor/smartisan/surabaya/proprietary/vendor/etc/perf-profile4.conf:system/vendor/etc/perf-profile4.conf \
+    vendor/smartisan/surabaya/proprietary/vendor/etc/perf-profile5.conf:system/vendor/etc/perf-profile5.conf \
+    vendor/smartisan/surabaya/proprietary/vendor/etc/perf-profile6.conf:system/vendor/etc/perf-profile6.conf \
     vendor/smartisan/surabaya/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
@@ -1183,7 +1188,6 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/surabaya/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
-    vendor/smartisan/surabaya/proprietary/vendor/lib/libNimsWrap.so:system/vendor/lib/libNimsWrap.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib/libOmxAlacDec.so:system/vendor/lib/libOmxAlacDec.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib/libOmxAmrwbplusDec.so:system/vendor/lib/libOmxAmrwbplusDec.so \
@@ -1220,7 +1224,6 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/surabaya/proprietary/vendor/lib/libc2d30_bltlib.so:system/vendor/lib/libc2d30_bltlib.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib/libcne.so:system/vendor/lib/libcne.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
-    vendor/smartisan/surabaya/proprietary/vendor/lib/libcneconn.so:system/vendor/lib/libcneconn.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib/libcneqmiutils.so:system/vendor/lib/libcneqmiutils.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib/libconnctrl.so:system/vendor/lib/libconnctrl.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib/libcppf.so:system/vendor/lib/libcppf.so \
@@ -1271,6 +1274,7 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/surabaya/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib/libqti-iop-client.so:system/vendor/lib/libqti-iop-client.so \
+    vendor/smartisan/surabaya/proprietary/vendor/lib/libqti-iop.so:system/vendor/lib/libqti-iop.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib/libqti-wl.so:system/vendor/lib/libqti-wl.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
@@ -1278,7 +1282,6 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/surabaya/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
-    vendor/smartisan/surabaya/proprietary/vendor/lib/libscve_stub.so:system/vendor/lib/libscve_stub.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib/libsensor_reg.so:system/vendor/lib/libsensor_reg.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib/libslimclient.so:system/vendor/lib/libslimclient.so \
@@ -1322,7 +1325,6 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/surabaya/proprietary/vendor/lib/rfsa/adsp/us-syncproximity.so:system/vendor/lib/rfsa/adsp/us-syncproximity.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib/sensors.oem.so:system/vendor/lib/sensors.oem.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib/sensors.ssc.so:system/vendor/lib/sensors.ssc.so \
-    vendor/smartisan/surabaya/proprietary/vendor/lib/soundfx/libLifevibes_lvac.so:system/vendor/lib/soundfx/libLifevibes_lvac.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib/soundfx/libqcbassboost.so:system/vendor/lib/soundfx/libqcbassboost.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib/soundfx/libqcreverb.so:system/vendor/lib/soundfx/libqcreverb.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so \
@@ -1358,11 +1360,11 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/lib-sec-disp.so:system/vendor/lib64/lib-sec-disp.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libC2D2.so:system/vendor/lib64/libC2D2.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libCB.so:system/vendor/lib64/libCB.so \
+    vendor/smartisan/surabaya/proprietary/vendor/lib64/libDRPlugin.so:system/vendor/lib64/libDRPlugin.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libGPTEE.so:system/vendor/lib64/libGPTEE.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libGPreqcancel.so:system/vendor/lib64/libGPreqcancel.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libGPreqcancel_svc.so:system/vendor/lib64/libGPreqcancel_svc.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libI420colorconvert.so:system/vendor/lib64/libI420colorconvert.so \
-    vendor/smartisan/surabaya/proprietary/vendor/lib64/libNimsWrap.so:system/vendor/lib64/libNimsWrap.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libOmxAacDec.so:system/vendor/lib64/libOmxAacDec.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libOmxEvrcDec.so:system/vendor/lib64/libOmxEvrcDec.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libOmxQcelp13Dec.so:system/vendor/lib64/libOmxQcelp13Dec.so \
@@ -1373,6 +1375,7 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libSecureUILib.so:system/vendor/lib64/libSecureUILib.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libStDrvInt.so:system/vendor/lib64/libStDrvInt.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libTimeService.so:system/vendor/lib64/libTimeService.so \
+    vendor/smartisan/surabaya/proprietary/vendor/lib64/lib_drplugin_server.so:system/vendor/lib64/lib_drplugin_server.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libacdb-fts.so:system/vendor/lib64/libacdb-fts.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libacdbloader.so:system/vendor/lib64/libacdbloader.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libacdbmapper.so:system/vendor/lib64/libacdbmapper.so \
@@ -1394,7 +1397,6 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libc2d30_bltlib.so:system/vendor/lib64/libc2d30_bltlib.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libcne.so:system/vendor/lib64/libcne.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libcneapiclient.so:system/vendor/lib64/libcneapiclient.so \
-    vendor/smartisan/surabaya/proprietary/vendor/lib64/libcneconn.so:system/vendor/lib64/libcneconn.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libcneqmiutils.so:system/vendor/lib64/libcneqmiutils.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libconfigdb.so:system/vendor/lib64/libconfigdb.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libconnctrl.so:system/vendor/lib64/libconnctrl.so \
@@ -1408,8 +1410,10 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libdpmtcm.so:system/vendor/lib64/libdpmtcm.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libdrmfs.so:system/vendor/lib64/libdrmfs.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libdrmtime.so:system/vendor/lib64/libdrmtime.so \
+    vendor/smartisan/surabaya/proprietary/vendor/lib64/libdrplugin_client.so:system/vendor/lib64/libdrplugin_client.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libdsi_netctrl.so:system/vendor/lib64/libdsi_netctrl.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libdsutils.so:system/vendor/lib64/libdsutils.so \
+    vendor/smartisan/surabaya/proprietary/vendor/lib64/libevent_observer.so:system/vendor/lib64/libevent_observer.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libfastcvadsp_stub.so:system/vendor/lib64/libfastcvadsp_stub.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libfastcvopt.so:system/vendor/lib64/libfastcvopt.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libflp.so:system/vendor/lib64/libflp.so \
@@ -1417,12 +1421,15 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libgeofence.so:system/vendor/lib64/libgeofence.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libgsl.so:system/vendor/lib64/libgsl.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libidl.so:system/vendor/lib64/libidl.so \
+    vendor/smartisan/surabaya/proprietary/vendor/lib64/libimscamera_jni.so:system/vendor/lib64/libimscamera_jni.so \
+    vendor/smartisan/surabaya/proprietary/vendor/lib64/libimsmedia_jni.so:system/vendor/lib64/libimsmedia_jni.so \
+    vendor/smartisan/surabaya/proprietary/vendor/lib64/libizat_client_api.so:system/vendor/lib64/libizat_client_api.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libizat_core.so:system/vendor/lib64/libizat_core.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/liblbs_core.so:system/vendor/lib64/liblbs_core.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libllvm-glnext.so:system/vendor/lib64/libllvm-glnext.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libllvm-qcom.so:system/vendor/lib64/libllvm-qcom.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libloc_ext.so:system/vendor/lib64/libloc_ext.so \
-    vendor/smartisan/surabaya/proprietary/vendor/lib64/libloc_xtra.so:system/vendor/lib64/libloc_xtra.so \
+    vendor/smartisan/surabaya/proprietary/vendor/lib64/libloc_externalDr.so:system/vendor/lib64/libloc_externalDr.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/liblocationservice.so:system/vendor/lib64/liblocationservice.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/liblocationservice_glue.so:system/vendor/lib64/liblocationservice_glue.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/liblowi_client.so:system/vendor/lib64/liblowi_client.so \
@@ -1452,12 +1459,16 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libqmi_encdec.so:system/vendor/lib64/libqmi_encdec.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libqmiservices.so:system/vendor/lib64/libqmiservices.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libqti-iop-client.so:system/vendor/lib64/libqti-iop-client.so \
+    vendor/smartisan/surabaya/proprietary/vendor/lib64/libqti-iop.so:system/vendor/lib64/libqti-iop.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libqti-perfd-client.so:system/vendor/lib64/libqti-perfd-client.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libqti-wl.so:system/vendor/lib64/libqti-wl.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libquipc_os_api.so:system/vendor/lib64/libquipc_os_api.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/librcc.so:system/vendor/lib64/librcc.so \
+    vendor/smartisan/surabaya/proprietary/vendor/lib64/libril-qc-ltedirectdisc.so:system/vendor/lib64/libril-qc-ltedirectdisc.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libril-qc-qmi-1.so:system/vendor/lib64/libril-qc-qmi-1.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libril-qc-radioconfig.so:system/vendor/lib64/libril-qc-radioconfig.so \
+    vendor/smartisan/surabaya/proprietary/vendor/lib64/libril-qcril-hook-oem.so:system/vendor/lib64/libril-qcril-hook-oem.so \
+    vendor/smartisan/surabaya/proprietary/vendor/lib64/librilqmiservices.so:system/vendor/lib64/librilqmiservices.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/librpmb.so:system/vendor/lib64/librpmb.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/librs_adreno.so:system/vendor/lib64/librs_adreno.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/librs_adreno_sha1.so:system/vendor/lib64/librs_adreno_sha1.so \
@@ -1471,6 +1482,7 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libsecureuisvc_jni.so:system/vendor/lib64/libsecureuisvc_jni.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libsensor1.so:system/vendor/lib64/libsensor1.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libsensor_reg.so:system/vendor/lib64/libsensor_reg.so \
+    vendor/smartisan/surabaya/proprietary/vendor/lib64/libsettings.so:system/vendor/lib64/libsettings.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libslimclient.so:system/vendor/lib64/libslimclient.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libsmemlog.so:system/vendor/lib64/libsmemlog.so \
     vendor/smartisan/surabaya/proprietary/vendor/lib64/libssd.so:system/vendor/lib64/libssd.so \
@@ -1499,15 +1511,13 @@ PRODUCT_PACKAGES += \
     libtime_genoff \
     QtiTelephonyService \
     TimeService \
-    datastatusnotification \
     embms \
-    fastdormancy \
     shutdownlistener \
     CNEService \
     QtiTetherService \
     com.qualcomm.location \
     dpmserviceapp \
-    ims \
     qcrilmsgtunnel \
-    qcnvitems \
+    ims \
+    imssettings \
     qcrilhook
