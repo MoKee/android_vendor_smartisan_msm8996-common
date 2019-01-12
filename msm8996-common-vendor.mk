@@ -1756,9 +1756,7 @@ PRODUCT_PACKAGES += \
     embms \
     imssettings \
     uceShimService \
-    CNEService \
     com.qualcomm.location \
-    dpmserviceapp \
     ims \
     qcrilmsgtunnel \
     PowerOffAlarm \
