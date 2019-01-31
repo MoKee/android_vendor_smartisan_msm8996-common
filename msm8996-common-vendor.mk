@@ -112,18 +112,13 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/msm8996-common/proprietary/etc/firmware/rampatch_tlv_3.2.tlv:system/etc/firmware/rampatch_tlv_3.2.tlv \
     vendor/smartisan/msm8996-common/proprietary/vendor/firmware/wlan/qca_cld/WCNSS_cfg.dat:system/vendor/firmware/wlan/qca_cld/WCNSS_cfg.dat \
     vendor/smartisan/msm8996-common/proprietary/vendor/etc/sensors/hals.conf:system/vendor/etc/sensors/hals.conf \
-    vendor/smartisan/msm8996-common/proprietary/vendor/lib/hw/camera.msm8996.so:system/vendor/lib/hw/camera.msm8996.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libarcsoft_agegender_detection.so:system/vendor/lib/libarcsoft_agegender_detection.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libarcsoft_beautyshot.so:system/vendor/lib/libarcsoft_beautyshot.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libarcsoft_low_light_shot.so:system/vendor/lib/libarcsoft_low_light_shot.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libarcsoft_panorama.so:system/vendor/lib/libarcsoft_panorama.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libifaa_daemon.so:system/vendor/lib/libifaa_daemon.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libifaa_jni.so:system/vendor/lib/libifaa_jni.so \
-    vendor/smartisan/msm8996-common/proprietary/vendor/lib/libmm-qcamera.so:system/vendor/lib/libmm-qcamera.so \
-    vendor/smartisan/msm8996-common/proprietary/vendor/lib/libmmcamera_interface.so:system/vendor/lib/libmmcamera_interface.so \
-    vendor/smartisan/msm8996-common/proprietary/vendor/lib/libmmjpeg_interface.so:system/vendor/lib/libmmjpeg_interface.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libmpbase.so:system/vendor/lib/libmpbase.so \
-    vendor/smartisan/msm8996-common/proprietary/vendor/lib/libqomx_core.so:system/vendor/lib/libqomx_core.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libteeclientjni.so:system/vendor/lib/libteeclientjni.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib64/hw/fingerprint.fpc.so:system/vendor/lib64/hw/fingerprint.fpc.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib64/hw/fingerprint.goodix.so:system/vendor/lib64/hw/fingerprint.goodix.so \
