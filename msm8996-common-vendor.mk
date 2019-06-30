@@ -889,9 +889,6 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libchromatix_truly_ov4688_zsl_preview_a3.so:system/vendor/lib/libchromatix_truly_ov4688_zsl_preview_a3.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libchromatix_truly_ov4688_zsl_video_a3.so:system/vendor/lib/libchromatix_truly_ov4688_zsl_video_a3.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libflash_pmic.so:system/vendor/lib/libflash_pmic.so \
-    vendor/smartisan/msm8996-common/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
-    vendor/smartisan/msm8996-common/proprietary/vendor/lib/libjpegdmahw.so:system/vendor/lib/libjpegdmahw.so \
-    vendor/smartisan/msm8996-common/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libmmcamera2_cpp_module.so:system/vendor/lib/libmmcamera2_cpp_module.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libmmcamera2_frame_algorithm.so:system/vendor/lib/libmmcamera2_frame_algorithm.so \
@@ -1028,9 +1025,6 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libmmcamera_truly_ov4688.so:system/vendor/lib/libmmcamera_truly_ov4688.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libmmcamera_tuning.so:system/vendor/lib/libmmcamera_tuning.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libmmcamera_tuning_lookup.so:system/vendor/lib/libmmcamera_tuning_lookup.so \
-    vendor/smartisan/msm8996-common/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
-    vendor/smartisan/msm8996-common/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
-    vendor/smartisan/msm8996-common/proprietary/vendor/lib/libmmqjpegdma.so:system/vendor/lib/libmmqjpegdma.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libois_bu63165_liteon.so:system/vendor/lib/libois_bu63165_liteon.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libois_bu63165_sharp.so:system/vendor/lib/libois_bu63165_sharp.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libois_lc898122.so:system/vendor/lib/libois_lc898122.so \
@@ -1360,6 +1354,9 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libhdr_tm.so:system/vendor/lib/libhdr_tm.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
+    vendor/smartisan/msm8996-common/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
+    vendor/smartisan/msm8996-common/proprietary/vendor/lib/libjpegdmahw.so:system/vendor/lib/libjpegdmahw.so \
+    vendor/smartisan/msm8996-common/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libkeymasterutils.so:system/vendor/lib/libkeymasterutils.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libllvm-glnext.so:system/vendor/lib/libllvm-glnext.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
@@ -1367,6 +1364,9 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libmm-hdcpmgr.so:system/vendor/lib/libmm-hdcpmgr.so \
+    vendor/smartisan/msm8996-common/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
+    vendor/smartisan/msm8996-common/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
+    vendor/smartisan/msm8996-common/proprietary/vendor/lib/libmmqjpegdma.so:system/vendor/lib/libmmqjpegdma.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libnetmgr_common.so:system/vendor/lib/libnetmgr_common.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libnlnetmgr.so:system/vendor/lib/libnlnetmgr.so \
