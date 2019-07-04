@@ -112,6 +112,7 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/msm8996-common/proprietary/etc/firmware/rampatch_tlv_3.2.tlv:system/etc/firmware/rampatch_tlv_3.2.tlv \
     vendor/smartisan/msm8996-common/proprietary/vendor/firmware/wlan/qca_cld/WCNSS_cfg.dat:system/vendor/firmware/wlan/qca_cld/WCNSS_cfg.dat \
     vendor/smartisan/msm8996-common/proprietary/vendor/etc/sensors/hals.conf:system/vendor/etc/sensors/hals.conf \
+    vendor/smartisan/msm8996-common/proprietary/vendor/etc/thermal-engine.conf:system/vendor/etc/thermal-engine.conf \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libarcsoft_agegender_detection.so:system/vendor/lib/libarcsoft_agegender_detection.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libarcsoft_beautyshot.so:system/vendor/lib/libarcsoft_beautyshot.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libarcsoft_low_light_shot.so:system/vendor/lib/libarcsoft_low_light_shot.so \
@@ -129,6 +130,7 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib64/libfpservice.so:system/vendor/lib64/libfpservice.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib64/libifaa_daemon.so:system/vendor/lib64/libifaa_daemon.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib64/libifaa_jni.so:system/vendor/lib64/libifaa_jni.so \
+    vendor/smartisan/msm8996-common/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
     vendor/smartisan/msm8996-common/proprietary/vendor/etc/scve/facereco/gModel.dat:system/vendor/etc/scve/facereco/gModel.dat \
     vendor/smartisan/msm8996-common/proprietary/vendor/etc/scve/textreco/chardecoder/CharType.dat:system/vendor/etc/scve/textreco/chardecoder/CharType.dat \
     vendor/smartisan/msm8996-common/proprietary/vendor/etc/scve/textreco/chardecoder/ChinesePunctuation.rst:system/vendor/etc/scve/textreco/chardecoder/ChinesePunctuation.rst \
@@ -1028,7 +1030,10 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libois_bu63165_liteon.so:system/vendor/lib/libois_bu63165_liteon.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libois_bu63165_sharp.so:system/vendor/lib/libois_bu63165_sharp.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libois_lc898122.so:system/vendor/lib/libois_lc898122.so \
-    vendor/smartisan/msm8996-common/proprietary/vendor/lib/libtof_vl53l0.so:system/vendor/lib/libtof_vl53l0.so
+    vendor/smartisan/msm8996-common/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
+    vendor/smartisan/msm8996-common/proprietary/vendor/lib/libtof_vl53l0.so:system/vendor/lib/libtof_vl53l0.so \
+    vendor/smartisan/msm8996-common/proprietary/vendor/lib64/libthermalclient.so:system/vendor/lib64/libthermalclient.so \
+    vendor/smartisan/msm8996-common/proprietary/vendor/lib64/libthermalioctl.so:system/vendor/lib64/libthermalioctl.so
 
 PRODUCT_PACKAGES += \
     ifaa_fw
@@ -1200,7 +1205,6 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/msm8996-common/proprietary/vendor/bin/sensors.qcom:system/vendor/bin/sensors.qcom \
     vendor/smartisan/msm8996-common/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
     vendor/smartisan/msm8996-common/proprietary/vendor/bin/tftp_server:system/vendor/bin/tftp_server \
-    vendor/smartisan/msm8996-common/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
     vendor/smartisan/msm8996-common/proprietary/vendor/bin/time_daemon:system/vendor/bin/time_daemon \
     vendor/smartisan/msm8996-common/proprietary/vendor/bin/wcnss_filter:system/vendor/bin/wcnss_filter \
     vendor/smartisan/msm8996-common/proprietary/vendor/bin/xtra-daemon:system/vendor/bin/xtra-daemon \
@@ -1426,7 +1430,6 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libsubsystem_control.so:system/vendor/lib/libsubsystem_control.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libsurround_3mic_proc.so:system/vendor/lib/libsurround_3mic_proc.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libsystem_health_mon.so:system/vendor/lib/libsystem_health_mon.so \
-    vendor/smartisan/msm8996-common/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libtinyxml2_1.so:system/vendor/lib/libtinyxml2_1.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libtzdrmgenprov.so:system/vendor/lib/libtzdrmgenprov.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libvpphvx.so:system/vendor/lib/libvpphvx.so \
@@ -1681,8 +1684,6 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib64/libssd.so:system/vendor/lib64/libssd.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib64/libsubsystem_control.so:system/vendor/lib64/libsubsystem_control.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib64/libsystem_health_mon.so:system/vendor/lib64/libsystem_health_mon.so \
-    vendor/smartisan/msm8996-common/proprietary/vendor/lib64/libthermalclient.so:system/vendor/lib64/libthermalclient.so \
-    vendor/smartisan/msm8996-common/proprietary/vendor/lib64/libthermalioctl.so:system/vendor/lib64/libthermalioctl.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib64/libtinyxml2_1.so:system/vendor/lib64/libtinyxml2_1.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib64/libtzdrmgenprov.so:system/vendor/lib64/libtzdrmgenprov.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib64/libulp2.so:system/vendor/lib64/libulp2.so \
