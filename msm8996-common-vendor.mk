@@ -120,9 +120,7 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libifaa_jni.so:system/vendor/lib/libifaa_jni.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libmpbase.so:system/vendor/lib/libmpbase.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libteeclientjni.so:system/vendor/lib/libteeclientjni.so \
-    vendor/smartisan/msm8996-common/proprietary/vendor/lib64/hw/fingerprint.fpc.so:system/vendor/lib64/hw/fingerprint.fpc.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib64/hw/fingerprint.goodix.so:system/vendor/lib64/hw/fingerprint.goodix.so \
-    vendor/smartisan/msm8996-common/proprietary/vendor/lib64/lib_fpc_tac_shared.so:system/vendor/lib64/lib_fpc_tac_shared.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib64/lib_ifaa_tac.so:system/vendor/lib64/lib_ifaa_tac.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib64/libfp_client.so:system/vendor/lib64/libfp_client.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib64/libfpnav.so:system/vendor/lib64/libfpnav.so \
