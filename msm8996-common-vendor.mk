@@ -152,6 +152,7 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/msm8996-common/proprietary/vendor/etc/scve/textreco/worddecoder/korean.pos.20141226.bin:system/vendor/etc/scve/textreco/worddecoder/korean.pos.20141226.bin \
     vendor/smartisan/msm8996-common/proprietary/vendor/etc/scve/textreco/worddecoder/korean_address_20150129.bin:system/vendor/etc/scve/textreco/worddecoder/korean_address_20150129.bin \
     vendor/smartisan/msm8996-common/proprietary/vendor/firmware/libpn548ad_fw.so:system/vendor/firmware/libpn548ad_fw.so \
+    vendor/smartisan/msm8996-common/proprietary/vendor/lib/hw/keystore.msm8996.so:system/vendor/lib/hw/keystore.msm8996.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libChamomilePA.so:system/vendor/lib/libChamomilePA.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libSonyIMX318_Liteon_PdafLibrary.so:system/vendor/lib/libSonyIMX318_Liteon_PdafLibrary.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libSonyIMX318_Primax_PdafLibrary.so:system/vendor/lib/libSonyIMX318_Primax_PdafLibrary.so \
@@ -1028,7 +1029,8 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libois_bu63165_liteon.so:system/vendor/lib/libois_bu63165_liteon.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libois_bu63165_sharp.so:system/vendor/lib/libois_bu63165_sharp.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/libois_lc898122.so:system/vendor/lib/libois_lc898122.so \
-    vendor/smartisan/msm8996-common/proprietary/vendor/lib/libtof_vl53l0.so:system/vendor/lib/libtof_vl53l0.so
+    vendor/smartisan/msm8996-common/proprietary/vendor/lib/libtof_vl53l0.so:system/vendor/lib/libtof_vl53l0.so \
+    vendor/smartisan/msm8996-common/proprietary/vendor/lib64/hw/keystore.msm8996.so:system/vendor/lib64/hw/keystore.msm8996.so
 
 PRODUCT_PACKAGES += \
     ifaa_fw
@@ -1265,7 +1267,6 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so:system/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so:system/vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/hw/gatekeeper.msm8996.so:system/vendor/lib/hw/gatekeeper.msm8996.so \
-    vendor/smartisan/msm8996-common/proprietary/vendor/lib/hw/keystore.msm8996.so:system/vendor/lib/hw/keystore.msm8996.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/hw/sound_trigger.primary.msm8996.so:system/vendor/lib/hw/sound_trigger.primary.msm8996.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/hw/vendor.qti.esepowermanager@1.0-impl.so:system/vendor/lib/hw/vendor.qti.esepowermanager@1.0-impl.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib/hw/vendor.qti.hardware.alarm@1.0-impl.so:system/vendor/lib/hw/vendor.qti.hardware.alarm@1.0-impl.so \
@@ -1515,7 +1516,6 @@ PRODUCT_COPY_FILES += \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so:system/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so:system/vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib64/hw/gatekeeper.msm8996.so:system/vendor/lib64/hw/gatekeeper.msm8996.so \
-    vendor/smartisan/msm8996-common/proprietary/vendor/lib64/hw/keystore.msm8996.so:system/vendor/lib64/hw/keystore.msm8996.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib64/hw/sound_trigger.primary.msm8996.so:system/vendor/lib64/hw/sound_trigger.primary.msm8996.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so:system/vendor/lib64/hw/vendor.qti.esepowermanager@1.0-impl.so \
     vendor/smartisan/msm8996-common/proprietary/vendor/lib64/hw/vendor.qti.gnss@1.0-impl.so:system/vendor/lib64/hw/vendor.qti.gnss@1.0-impl.so \
